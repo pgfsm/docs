@@ -1,0 +1,4 @@
+# Docs
+
+- [Hello World](/docs): Your favourite docs framework.
+- [Test](/docs/test): This is another page
