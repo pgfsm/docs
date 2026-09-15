@@ -1,0 +1,7 @@
+{
+  "title": "ADRs",
+  "pages": [
+    "adr-001-rls-policy",
+    "adr-002-nodejs-npm-pinned-supabase-cli"
+  ]
+}

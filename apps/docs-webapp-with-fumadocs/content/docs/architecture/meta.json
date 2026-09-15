@@ -1,0 +1,8 @@
+{
+  "title": "Architecture",
+  "pages": [
+    "adr",
+    "specs",
+    "schema-change-propagation"
+  ]
+}

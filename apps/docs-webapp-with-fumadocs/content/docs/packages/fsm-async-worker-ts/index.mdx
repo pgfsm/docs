@@ -1,0 +1,19 @@
+---
+title: fsm-async-worker-ts
+description: The superseded predecessor to fsm-core-async-op-worker, kept runnable for reference.
+---
+
+`fsm-async-worker-ts` was the original async-operation worker. It is
+superseded by
+[fsm-core-async-op-worker](/docs/packages/fsm-core-async-op-worker) — kept
+runnable for now, but no new work should target it. Unlike the current
+gateway, it followed the same kube-style node-agent/scheduler split as the
+FSM Sync-Operation Worker, and registered itself in its own DB tables
+(`async_operation_meta`, `async_operation_workerlet`) rather than in-memory
+over a sidecar socket.
+
+See the
+[Developer Guide's superseded `fsm-async-worker-ts` appendix](/docs/guides/developer-guide#appendix-superseded-fsm-async-worker-ts)
+for the full comparison against `fsm-core-async-op-worker`, and the
+[CLI usage guide](/docs/packages/fsm-async-worker-ts/guides/cli-usage) for
+this package's own CLIs.

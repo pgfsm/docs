@@ -1,0 +1,21 @@
+---
+title: "TODO Index"
+description: "Cross-cutting pending work tracked across the monorepo; package-specific TODOs live in each package's own docs."
+---
+
+Cross-cutting pending work tracked here. Package-specific TODOs live in each
+package's `docs/todo/`.
+
+## Cross-cutting (this folder)
+
+| File                                                   | Summary                                                                                                                           | Status     |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| [pgmq-queue-name-length.md](/docs/known-issues/todo/pgmq-queue-name-length) | Add runtime + compile-time validation for 47-char async-operation queue name limit — affects `database-src` and `fsm-compiler-ts` | 🔲 Pending |
+
+## Package / app TODOs
+
+| Location                                     | File                                                                               | Summary                                                                       |
+| -------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `packages/database-src-extension/docs/todo/` | [pgxn-publish.md](/docs/packages/database-src-extension/todo/pgxn-publish) | Verify PGXN upload command and test full build → publish → install round-trip |
+| `packages/fsm-compiler-ts/docs/todo/`        | [cli-gaps.md](/docs/packages/fsm-compiler-ts/todo/cli-gaps)                | Test coverage gaps for CLI commands (section 5)                               |
+| `packages/fsm-compiler-ts/docs/todo/`        | [TODO.md](/docs/packages/fsm-compiler-ts/todo/todo)                        | Design-FSM-JSON-schema gaps: adopt schema v3 + wire `fsmLanguage`             |

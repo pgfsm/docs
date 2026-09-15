@@ -1,0 +1,11 @@
+{
+  "title": "database-src-extension",
+  "pages": [
+    "index",
+    "testing",
+    "adr",
+    "guides",
+    "todo",
+    "fsm-core-dependency"
+  ]
+}

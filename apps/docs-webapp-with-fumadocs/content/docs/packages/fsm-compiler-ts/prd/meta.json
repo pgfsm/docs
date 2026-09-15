@@ -1,0 +1,10 @@
+{
+  "title": "PRDs",
+  "pages": [
+    "prd-001-design-fsm-json-schema",
+    "prd-002-scaffold-async-operation-logic",
+    "prd-003-scaffold-sync-operation-logic",
+    "prd-004-validate-async-operation-logic",
+    "prd-005-validate-sync-operation-logic"
+  ]
+}

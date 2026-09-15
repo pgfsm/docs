@@ -1,0 +1,9 @@
+{
+  "title": "database-src",
+  "pages": [
+    "index",
+    "adr",
+    "guides",
+    "reference"
+  ]
+}
