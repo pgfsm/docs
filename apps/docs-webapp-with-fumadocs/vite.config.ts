@@ -6,6 +6,9 @@ import { fumadocsMdx } from 'fumadocs-mdx/vite';
 import { nitro } from 'nitro/vite';
 
 export default defineConfig({
+  // Served on GitHub Pages as a project page at https://pgfsm.github.io/docs/,
+  // so all built asset URLs need the /docs/ prefix.
+  base: '/docs/',
   server: {
     port: 3000,
   },
@@ -22,6 +25,9 @@ export default defineConfig({
       },
 
       pages: [
+        {
+          path: '/',
+        },
         {
           path: '/docs',
         },
