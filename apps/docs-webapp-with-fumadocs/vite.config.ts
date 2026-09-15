@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 import { fumadocsMdx } from 'fumadocs-mdx/vite';
 import { nitro } from 'nitro/vite';
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   // Served on GitHub Pages as a project page at https://pgfsm.github.io/docs/,
   // so all built asset URLs need the /docs/ prefix.
   base: '/docs/',
@@ -47,9 +47,14 @@ export default defineConfig({
     nitro({
       // Emit the static site into the repo root `docs/` folder (see
       // repository CLAUDE.md) instead of the default `.output/public`.
-      output: {
-        publicDir: '../../docs',
-      },
+      // Build-only: nitro's dev-mode static-asset reader assumes a
+      // `globalThis.__nitro_main__` that only exists in a built server entry,
+      // so applying this override during `vite dev` 500s every request.
+      ...(command === 'build' && {
+        output: {
+          publicDir: '../../docs',
+        },
+      }),
     }),
   ],
   resolve: {
@@ -58,4 +63,4 @@ export default defineConfig({
       tslib: 'tslib/tslib.es6.js',
     },
   },
-});
+}));
