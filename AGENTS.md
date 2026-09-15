@@ -8,8 +8,8 @@ follow the same flow.
 
 1. Read the relevant `README.md` for the package/app you're touching.
 2. For anything non-trivial (new component, cross-cutting change,
-   architecture decision), write a short design note under `docs/adr/`
-   before writing code — see [docs/adr/README.md](docs/adr/README.md).
+   architecture decision), write a short design note under `adr/`
+   before writing code — see [adr/README.md](adr/README.md).
 3. Check open issues for related, in-progress work before starting.
 
 ## Making changes

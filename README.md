@@ -15,7 +15,8 @@ docs/
 │   └── example-app/      # starter app — replace or delete
 ├── packages/              # shared, importable libraries
 │   └── example-lib/      # starter package — replace or delete
-├── docs/adr/               # architecture decision records
+├── adr/                   # architecture decision records
+├── docs/                    # documentation site content
 └── .github/                 # CI workflows, issue/PR templates
 ```
 

@@ -15,7 +15,7 @@ cd apps/example-app && deno task start
 
 - `apps/` — deployable applications
 - `packages/` — shared libraries consumed by apps (and each other)
-- `docs/adr/` — architecture decision records for non-obvious design choices
+- `adr/` — architecture decision records for non-obvious design choices
 
 ## Making a change
 
