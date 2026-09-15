@@ -38,7 +38,13 @@ export default defineConfig({
     }),
     react(),
     // please see https://tanstack.com/start/latest/docs/framework/react/guide/hosting#nitro for guides on hosting
-    nitro(),
+    nitro({
+      // Emit the static site into the repo root `docs/` folder (see
+      // repository CLAUDE.md) instead of the default `.output/public`.
+      output: {
+        publicDir: '../../docs',
+      },
+    }),
   ],
   resolve: {
     tsconfigPaths: true,
