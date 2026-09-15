@@ -1,0 +1,56 @@
+---
+title: Packages
+description: The published and internal packages that make up the pgFSM framework.
+---
+
+Each package below has its own documentation section, mirroring that
+package's own `docs/` folder in the [`fsm`](https://github.com/pgfsm/fsm)
+repository.
+
+<Cards>
+  <Card
+    title="fsm-compiler-ts"
+    description="FSM JSON compiler for PostgreSQL-backed state machines."
+    href="/docs/packages/fsm-compiler-ts"
+  />
+  <Card
+    title="fsm-sync-worker-ts"
+    description="The out-of-band worker fleet that drives FSM instances forward."
+    href="/docs/packages/fsm-sync-worker-ts"
+  />
+  <Card
+    title="fsm-core-async-op-worker"
+    description="The Activity Gateway for async-operation-type FSM operations across polyglot actors."
+    href="/docs/packages/fsm-core-async-op-worker"
+  />
+  <Card
+    title="fsm-async-worker-ts"
+    description="Superseded predecessor to fsm-core-async-op-worker, kept for reference."
+    href="/docs/packages/fsm-async-worker-ts"
+  />
+  <Card
+    title="fsm-core-db-ts"
+    description="TypeScript wrappers over the PostgreSQL functions in the fsm_core schema."
+    href="/docs/packages/fsm-core-db-ts"
+  />
+  <Card
+    title="fsm-logging-ts"
+    description="The single owner of logging config for the repo, built on LogTape."
+    href="/docs/packages/fsm-logging-ts"
+  />
+  <Card
+    title="fsm-proto-codegen"
+    description="Buf-driven .proto to multi-language stub generation for the polyglot actor languages."
+    href="/docs/packages/fsm-proto-codegen"
+  />
+  <Card
+    title="database-src"
+    description="fsm_core — a finite state machine engine that runs entirely inside PostgreSQL."
+    href="/docs/packages/database-src"
+  />
+  <Card
+    title="database-src-extension"
+    description="An unadopted Rust/pgrx PostgreSQL extension, kept for reference."
+    href="/docs/packages/database-src-extension"
+  />
+</Cards>

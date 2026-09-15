@@ -1,31 +1,24 @@
 ---
-title: Hello World
-description: Your favourite docs framework.
-icon: Rocket
+title: pgFSM
+description: A framework for running versioned finite state machines inside PostgreSQL.
 ---
 
-Hey there! Fumadocs is the docs framework that also works on Tanstack Start!
+pgFSM is a framework for running versioned finite state machines inside
+PostgreSQL. State machines are defined once as a JSON schema, compiled into
+the database, and then driven forward by sending events through SQL
+functions — PostgreSQL is the source of truth for every state, transition,
+guard, and event in the system.
 
-## Heading
-
-Hello World!
+An out-of-band worker fleet drives instances forward without the database (or
+any HTTP API) ever blocking on worker lifecycle: sync operation logic
+(actions, guards, delays) runs inline, while async operation logic (actors)
+is dispatched to polyglot (TypeScript/Python/Rust/Go) workers through an
+Activity Gateway.
 
 <Cards>
-  <Card title="Learn more about Tanstack Start" href="https://tanstack.com/start" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.dev" />
+  <Card title="Getting Started" href="/docs/getting-started" />
+  <Card title="Guides" href="/docs/guides/developer-guide" />
+  <Card title="Architecture" href="/docs/architecture/schema-change-propagation" />
+  <Card title="Packages" href="/docs/packages" />
+  <Card title="Apps" href="/docs/apps" />
 </Cards>
-
-### CodeBlock
-
-```ts
-console.log('Hello World');
-```
-
-#### Table
-
-| Head                            | Description                         |
-| ------------------------------- | ----------------------------------- |
-| `hello`                         | Hello World                         |
-| very **important**              | Hey                                 |
-| _Surprisingly_                  | Fumadocs                            |
-| very long text that looks weird | hello world hello world hello world |

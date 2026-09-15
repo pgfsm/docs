@@ -1,0 +1,10 @@
+{
+  "title": "fsm-compiler-ts",
+  "pages": [
+    "index",
+    "guides",
+    "reference",
+    "prd",
+    "todo"
+  ]
+}

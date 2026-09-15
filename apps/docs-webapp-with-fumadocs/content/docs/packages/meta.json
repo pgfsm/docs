@@ -1,0 +1,15 @@
+{
+  "title": "Packages",
+  "pages": [
+    "index",
+    "fsm-compiler-ts",
+    "fsm-sync-worker-ts",
+    "fsm-core-async-op-worker",
+    "fsm-async-worker-ts",
+    "fsm-core-db-ts",
+    "fsm-logging-ts",
+    "fsm-proto-codegen",
+    "database-src",
+    "database-src-extension"
+  ]
+}
