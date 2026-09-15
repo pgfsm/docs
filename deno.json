@@ -1,6 +1,9 @@
 {
   "workspace": ["apps/example-app", "packages/example-lib"],
   "fmt": {
-    "exclude": [".github/assets/**"]
+    "exclude": [".github/assets/**", "apps/docs-webapp-with-fumadocs/**"]
+  },
+  "lint": {
+    "exclude": ["apps/docs-webapp-with-fumadocs/**"]
   }
 }
