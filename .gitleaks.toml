@@ -1,0 +1,11 @@
+title = "docs gitleaks config"
+
+[extend]
+useDefault = true
+
+# Add project-specific allowlist entries here, e.g. for known-safe demo
+# tokens shipped by local dev tooling.
+[allowlist]
+description = "Project-specific allowlist"
+regexes = []
+paths = []

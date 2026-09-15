@@ -1,0 +1,6 @@
+{
+  "workspace": ["apps/example-app", "packages/example-lib"],
+  "fmt": {
+    "exclude": [".github/assets/**"]
+  }
+}
